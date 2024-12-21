@@ -17,17 +17,19 @@ const inter = Inter({ subsets: ['latin'] })
 const jet = JetBrains_Mono({ subsets: ['latin'] })
 
 export default function Home() {
+  const fonts = [inter, jet];
+
   return (
     <ReactLenis root>
-      <Navbar font={inter}/>
-      <Landing />
-      <Agenda />
-      <Idea />
-      <Concept />
-      <CTA_Main font={jet} />
-      <CTA font={[jet, inter]} />
-      <Contact />
-      <Form />
+      <Navbar font={fonts} />
+      <Landing font={fonts} />
+      <Agenda font={fonts} />
+      <Idea font={fonts} />
+      <Concept font={fonts} />
+      <CTA_Main font={fonts} />
+      <CTA font={fonts} />
+      <Contact font={fonts} />
+      <Form font={fonts} />
     </ReactLenis>
   );
 }

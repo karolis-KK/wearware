@@ -15,7 +15,7 @@ const questrail = Questrial({
 
 const jet = JetBrains_Mono({ subsets: ["latin"] })
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false)
   let links = [
     { name: "Idea", to: "ideaSection" },
@@ -64,10 +64,10 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`${inter.className} fixed inset-x-4 top-4 z-50`}>
+    <nav className={`${props.font[0].className} fixed inset-x-4 top-4 z-50`}>
       <div className="h-16 justify-between flex items-center bg-black rounded-md max-w-6xl mx-auto">
         <h1 className={`text-2xl flex items-center ${inter.className} ml-4`}>
-          <img src="logo.png" className="w-14" alt="logo" />
+          <img src="logo.webp" className="w-14" alt="logo" />
         </h1>
 
         {/* Desktop Menu */}

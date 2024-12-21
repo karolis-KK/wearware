@@ -7,13 +7,13 @@ import AnimatedSection from "./AnimatedSection"
 const inter = Inter({ subsets: ["latin"] })
 const jet = JetBrains_Mono({ subsets: ["latin"] })
 
-export default function Landing() {
+export default function Landing(props) {
   return (
     <AnimatedSection>
       <section
-        className="flex flex-col h-screen relative"
+        className={`${props.font[0].className} flex flex-col h-screen relative`}
         style={{
-          backgroundImage: "url('/bg.png')",
+          backgroundImage: "url('/bg.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

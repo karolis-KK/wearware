@@ -7,13 +7,13 @@ import AnimatedSection from "./AnimatedSection";
 const inter = Inter({ subsets: ['latin'] })
 const jet = JetBrains_Mono({ subsets: ['latin'] })
 
-export default function Contact() {
+export default function Contact(props) {
     return (
         <AnimatedSection>
             <section
                 id="contactSection"
-                className="flex flex-col h-screen relative" style={{
-                backgroundImage: "url('/bg4.png')",
+                className={`${props.font[0].className} flex flex-col h-screen relative`} style={{
+                backgroundImage: "url('/bg4.webp')",
                 backgroundSize: 'cover', // makes the image cover the entire element
                 backgroundPosition: 'center', // centers the image
                 }}>

@@ -9,7 +9,7 @@ import AnimatedSection from "./AnimatedSection"
 const inter = Inter({ subsets: ["latin"] })
 const jet = JetBrains_Mono({ subsets: ["latin"] })
 
-export default function Form() {
+export default function Form(props) {
   return (
     <AnimatedSection>
       <section className="flex flex-col bg-white h-screen relative">
@@ -19,7 +19,7 @@ export default function Form() {
           Contact
         </h1>
         <div
-          className={`${inter.className} grow flex justify-center items-center flex-row`}
+          className={`${props.font[0].className} grow flex justify-center items-center flex-row`}
         >
           <div className="lg:w-[50rem] lg:px-24 -mt-32">
             <div className="flex justify-between text-2xl">
@@ -55,5 +55,5 @@ export default function Form() {
         <Tag page="Contact" bg="yes" />
       </section>
     </AnimatedSection>
-  )
+  );
 }

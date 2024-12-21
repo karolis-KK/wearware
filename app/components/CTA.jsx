@@ -4,7 +4,7 @@ import { TypingAnimation } from "./typing-animation"
 export default function CTA(props) {
   return (
     <AnimatedSection>
-      <section className="flex flex-col lg:flex-row lg:h-screen relative bg-white">
+      <section className={`${props.font[1].className} cta flex flex-col lg:flex-row lg:h-screen relative bg-white`}>
         <div className="mt-14 ml-4 lg:ml-24 lg:w-1/2">
           <h1 className={`${props.font[0].className} text-4xl text-black `}>
             Calls to Action
@@ -63,5 +63,5 @@ export default function CTA(props) {
         <Tag page="CTA" bg="yes" />
       </section>
     </AnimatedSection>
-  )
+  );
 }

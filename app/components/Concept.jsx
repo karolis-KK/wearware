@@ -9,10 +9,10 @@ import AnimatedSection from "./AnimatedSection"
 const inter = Inter({ subsets: ["latin"] })
 const jet = JetBrains_Mono({ subsets: ["latin"] })
 
-export default function Concept() {
+export default function Concept(props) {
   return (
     <AnimatedSection>
-      <section className="flex flex-col lg:flex-row lg:h-screen relative bg-white">
+      <section className={`${props.font[0].className} flex flex-col lg:flex-row lg:h-screen relative bg-white`}>
         <div className="mt-14 ml-10 lg:ml-24">
           <h1 className={`${jet.className} text-4xl text-black `}>
             Wearware AI
@@ -55,5 +55,5 @@ export default function Concept() {
         <Tag page=" " bg="yes" />
       </section>
     </AnimatedSection>
-  )
+  );
 }
