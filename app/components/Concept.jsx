@@ -12,18 +12,18 @@ const jet = JetBrains_Mono({ subsets: ["latin"] })
 export default function Concept(props) {
   return (
     <AnimatedSection>
-      <section className={`${props.font[0].className} flex flex-col lg:flex-row lg:h-screen relative bg-white`}>
-        <div className="mt-14 ml-10 lg:ml-24">
-          <h1 className={`${jet.className} text-4xl text-black `}>
+      <section className={`${props.font[0].className} flex flex-col mdlg:flex-row mdlg:h-screen relative bg-white`}>
+        <div className="mt-14 ml-10 mdlg:ml-24">
+          <h1 className={`${props.font[1].className} text-4xl text-black `}>
             Wearware AI
           </h1>
           <h1
-            className={`${jet.className} text-4xl mt-4 text-neutral-500 w-[17rem]`}
+            className={`${props.font[1].className} text-4xl mt-4 text-neutral-500 w-[17rem]`}
           >
             Concept A
           </h1>
           <div
-            className={`lg:w-[26rem] mt-12 lg:mt-24 lg:scale-105 text-black font-medium text-xl w-[19rem] lg:text-2xl ${inter.className} tracking-tight`}
+            className={`mdlg:w-[26rem] md:w-[40rem] mt-12 mdlg:mt-24 mdlg:scale-105 text-black font-medium text-xl w-[19rem] mdlg:text-2xl ${props.font[0].className} tracking-tight`}
           >
             wearware is a ai-driven platform revolutionizing the way users shop
             for pre-owned clothing. Our app helps users find exactly what
@@ -32,10 +32,10 @@ export default function Concept(props) {
             across a vast array of second-hand clothing resale platforms.
           </div>
         </div>
-        <div className="relative scale-90 lg:mx-[15rem]">
+        <div className="relative scale-90 md:mx-[10rem] ph:mx-[15rem]">
           <Iphone15ProDemo />
         </div>
-        <div className="mt-14 mb-24 lg:mb-0 items-center lg:items-start flex flex-col gap-y-24 justify-center">
+        <div className="mt-14 mb-24 mdlg:mb-0 items-center mdlg:items-start flex flex-col gap-y-24 justify-center">
           <Feature
             title="Visual Search"
             font={[inter, jet]}

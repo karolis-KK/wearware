@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google"
 import { JetBrains_Mono } from "next/font/google"
-import Tag from "./components/Tag"
 import Link from 'next/link'
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 

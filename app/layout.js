@@ -14,7 +14,7 @@ export const metadata = {
   ogDescription:
     "Discover the easiest way to find exact matches for second-hand clothing! Upload an image, and let Wearware AI search top resale sites for you.",
   ogImage: "/logo.png", // Add a path to your Open Graph image (you can use a logo or a representative image)
-  ogUrl: "https://www.wearwareai.com", // Replace with your actual website URL
+  ogUrl: "https://www.wearware.vercel.app", // Replace with your actual website URL
   twitterCard: "summary_large_image",
   twitterTitle: "Wearware AI",
   twitterDescription:

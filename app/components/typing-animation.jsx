@@ -13,7 +13,7 @@ export function TypingAnimation({
   as: Component = "div",
   startOnView = true
 }) {
-  const MotionComponent = motion(Component);
+  const MotionComponent = motion.create(Component);
   const [displayedText, setDisplayedText] = useState("");
   const [started, setStarted] = useState(false);
   const elementRef = useRef(null);
@@ -29,13 +29,14 @@ export function TypingAnimation({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          setStarted(false); // Reset started state
+          setDisplayedText(""); // Clear displayed text
           setTimeout(() => {
-            setStarted(true);
+            setStarted(true); // Start typing animation
           }, delay);
-          observer.disconnect();
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0 }, // Adjusted threshold to 0
     );
 
     if (elementRef.current) {

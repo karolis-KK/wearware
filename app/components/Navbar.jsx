@@ -1,27 +1,18 @@
 "use client"
 
-import { Inter, Questrial } from "next/font/google"
-import { JetBrains_Mono } from "next/font/google"
 import { PlusIcon } from "@heroicons/react/24/outline"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Link } from "react-scroll"
 
-const inter = Inter({ subsets: ["latin"] })
-const questrail = Questrial({
-  subsets: ["latin"],
-  weight: "400",
-})
-
-const jet = JetBrains_Mono({ subsets: ["latin"] })
-
 export default function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false)
   let links = [
-    { name: "Idea", to: "ideaSection" },
-    { name: "CTA", to: "ctaSection" },
-    { name: "Contact", to: "contactSection" },
-  ]
+      { name: "Intro", to: "introSection" },
+      { name: "Idea", to: "ideaSection" },
+      { name: "CTA", to: "ctaSection" },
+      { name: "Contact", to: "contactSection" },
+    ]
 
   const menuVariants = {
     hidden: {
@@ -66,7 +57,7 @@ export default function Navbar(props) {
   return (
     <nav className={`${props.font[0].className} fixed inset-x-4 top-4 z-50`}>
       <div className="h-16 justify-between flex items-center bg-black rounded-md max-w-6xl mx-auto">
-        <h1 className={`text-2xl flex items-center ${inter.className} ml-4`}>
+        <h1 className={`text-2xl flex items-center ${props.font[0].className} ml-4`}>
           <img src="logo.webp" className="w-14" alt="logo" />
         </h1>
 
@@ -77,7 +68,7 @@ export default function Navbar(props) {
               to={element.to}
               smooth={true}
               duration={500}
-              className={`uppercase text-neutral-100 hover:underline mx-4 ${jet.className} cursor-pointer`}
+              className={`uppercase text-neutral-100 hover:underline mx-4 ${props.font[1].className} cursor-pointer`}
               key={i}
             >
               {element.name}
@@ -98,7 +89,7 @@ export default function Navbar(props) {
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center"
           >
-            <span className={`text-white uppercase mr-2 ${jet.className}`}>
+            <span className={`text-white uppercase mr-2 ${props.font[1].className}`}>
               Menu
             </span>
             <motion.div
@@ -130,7 +121,7 @@ export default function Navbar(props) {
               onClick={() => setIsOpen(false)}
               whileHover={{ scale: 1.1 }}
             >
-              <span className={`text-black uppercase mr-2 ${jet.className}`}>
+              <span className={`text-black uppercase mr-2 ${props.font[1].className}`}>
                 Close
               </span>
               <div className="relative size-6 flex items-center justify-center">
@@ -146,7 +137,7 @@ export default function Navbar(props) {
                   duration={500}
                   onClick={() => setIsOpen(false)}
                   key={element.name}
-                  className={`block uppercase text-black hover:text-white hover:backdrop-invert ${jet.className}`}
+                  className={`block uppercase text-black hover:text-white hover:backdrop-invert ${props.font[1].className}`}
                 >
                   {element.name}
                 </Link>
