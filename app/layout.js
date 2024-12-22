@@ -29,7 +29,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
         <link rel="shortcut icon" href="/favicon.ico?v=2" />
       </head>
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+      </body>
     </html>
   )
 }

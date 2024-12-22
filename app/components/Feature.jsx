@@ -6,7 +6,7 @@ export default function Feature(props) {
       <TypingAnimation className={`text-2xl font-medium ${props.font[1].className}`}>
         {props.title}
       </TypingAnimation>
-      <p className="text-neutral-500 w-72">{props.description}</p>
+      <p className="text-[#525252] w-72">{props.description}</p>
     </div>
   )
 }
