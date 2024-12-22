@@ -15,12 +15,12 @@ export default function Landing(props) {
       >
         <div className="mt-[16rem] ml-[1rem] lg:ml-[5rem]">
           <h1
-            className={`${props.font[1].className} hidden lg:block text-neutral-100 text-7xl tracking-tighter lg:text-9xl mdlg:w-[80rem]`}
+            className={`${props.font[1].className} hidden lg:block text-neutral-100 text-7xl tracking-tighter lg:text-9xl hd:w-[80rem]`}
           >
             Introducing Wearware AI
           </h1>
           <h1
-            className={`${props.font[1].className} lg:hidden text-neutral-100 text-7_5xl tracking-tighter lg:text-9xl mdlg:w-[80rem]`}
+            className={`${props.font[1].className} lg:hidden text-neutral-100 text-7_5xl tracking-tighter lg:text-9xl hd:w-[80rem]`}
           >
             Intro/ ducing Wearware AI
           </h1>

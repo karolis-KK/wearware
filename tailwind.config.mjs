@@ -19,6 +19,7 @@ export default {
   		},
       screens: {
         'mdlg': '1250px',
+		'hd': '1365px',
 		'ph': '1730px',
       },
   	}

@@ -19,7 +19,7 @@ export default function CTA(props) {
         <div className="mdlg:w-3/5 flex-col mdlg:flex-row flex mdlg:px-0 px-2 pt-[2rem] pb-[7rem] mdlg:py-[5rem] mdlg:pr-[5rem]">
           <div className="mdlg:h-full bg-neutral-200 mdlg:mr-2 pt-4 mdlg:pt-0 flex flex-col justify-between pb-4 rounded-lg mdlg:w-1/2">
             <p
-              className={`${props.font[1].className} text-2xl mdlg:mt-[20rem] mdlg:w-[20rem] ml-4 text-neutral-500`}
+              className={`${props.font[1].className} text-2xl mdlg:mt-[12.5rem] mdlg:w-[20rem] ml-4 text-neutral-500`}
             >
               to accelerate development, expand platform integrations, and
               enhance AI capabilities
@@ -33,7 +33,7 @@ export default function CTA(props) {
           <div className="mdlg:h-full mt-4 mdlg:mt-0 flex flex-col pt-4 mdlg:pt-0 rounded-lg bg-neutral-200 mdlg:bg-transparent mdlg:w-3/5">
             <div className="h-1/2 mdlg:bg-neutral-200 mdlg:w-full rounded-lg flex flex-col pb-4 justify-between">
               <p
-                className={`${props.font[1].className} text-2xl mdlg:w-[20rem] mdlg:mt-[5rem] ml-4 text-neutral-500`}
+                className={`${props.font[1].className} text-2xl mdlg:w-[20rem] mdlg:mt-[1rem] ml-4 text-neutral-500`}
               >
                 collaborations with resale platforms, sustainable fashion
                 brands, and influencers to grow our reach
@@ -46,7 +46,7 @@ export default function CTA(props) {
             </div>
             <div className="h-1/2 mdlg:bg-neutral-200 mdlg:w-full rounded-lg mdlg:mt-2 flex pb-4 flex-col justify-between">
               <p
-                className={`${props.font[1].className} text-2xl mdlg:w-[20rem] mdlg:mt-[5rem] ml-4 text-neutral-500`}
+                className={`${props.font[1].className} text-2xl mdlg:w-[20rem] mdlg:mt-[1rem] ml-4 text-neutral-500`}
               >
                 early adopters, beta testers, and advocates to help refine the
                 user experience and spread the word about Wearware’s mission

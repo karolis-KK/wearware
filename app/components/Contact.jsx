@@ -12,7 +12,7 @@ export default function Contact(props) {
                 backgroundPosition: 'center', // centers the image
                 }}>
                 <div className="mt-[16rem] ml-[1rem] lg:ml-[5rem]">
-                    <h1 className={`${props.font[1].className} text-7xl text-neutral-200 lg:text-9xl mdlg:w-[80rem]`}>Contact</h1>
+                    <h1 className={`${props.font[1].className} text-7xl text-neutral-200 lg:text-9xl hd:w-[80rem]`}>Contact</h1>
                 </div>
                 <Tag page="Contact" bg="not"/>
             </section>

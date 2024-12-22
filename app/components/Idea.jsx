@@ -16,7 +16,7 @@ export default function Idea(props) {
       >
         <div className="mt-[16rem] ml-[1rem] lg:ml-[5rem]">
           <h1
-            className={`${props.font[1].className} text-neutral-200 text-8xl lg:text-9xl mdlgw-[80rem]`}
+            className={`${props.font[1].className} text-neutral-200 text-8xl lg:text-9xl hd:w-[80rem]`}
           >
             Idea
           </h1>

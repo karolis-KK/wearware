@@ -12,7 +12,7 @@ const jet = JetBrains_Mono({ subsets: ["latin"] })
 export default function Concept(props) {
   return (
     <AnimatedSection>
-      <section className={`${props.font[0].className} flex flex-col mdlg:flex-row mdlg:h-screen relative bg-white`}>
+      <section className={`${props.font[0].className} flex flex-col mdlg:flex-row lg:h-screen relative bg-white`}>
         <div className="mt-14 ml-10 mdlg:ml-24">
           <h1 className={`${props.font[1].className} text-4xl text-black `}>
             Wearware AI
