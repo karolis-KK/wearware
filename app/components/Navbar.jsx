@@ -58,7 +58,16 @@ export default function Navbar(props) {
     <nav className={`${props.font[0].className} fixed inset-x-4 top-4 z-50`}>
       <div className="h-16 justify-between flex items-center bg-black rounded-md max-w-6xl mx-auto">
         <h1 className={`text-2xl flex items-center ${props.font[0].className} ml-4`}>
-          <img src="logo.webp" className="w-14" alt="logo" />
+        <div style={{ pointerEvents: 'none' }}>
+          <iframe
+            src="https://giphy.com/embed/qiKNKICRHiQCOUF6hg"
+            width="92"
+            height="92"
+            style={{ border: 0 }}
+            className="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </div>
         </h1>
 
         {/* Desktop Menu */}
