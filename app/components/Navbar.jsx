@@ -70,7 +70,7 @@ export default function Navbar(props) {
         </div>
         </h1>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu  */}
         <div className="hidden md:flex">
           {links.map((element, i) => (
             <Link
