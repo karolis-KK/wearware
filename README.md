@@ -1,6 +1,6 @@
 ## Wearware AI: find your fashion grails in second hand marekts.
 
-https://github.com/user-attachments/assets/9478ca7f-7760-4564-aa51-99d87a42256b
+![Screenrecorder-2024-12-20-19-57-14-626online-video-cutter com-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d6b3cebd-71ee-4839-8329-16eff3945da7)
 
 ## CTA
 The web-app is currently in development.
