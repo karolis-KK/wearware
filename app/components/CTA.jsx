@@ -30,7 +30,7 @@ export default function CTA(props) {
               funding
             </TypingAnimation>
           </div>
-          <div className="mdlg:h-full mt-4 mdlg:mt-0 flex flex-col pt-4 mdlg:pt-0 rounded-lg bg-neutral-200 mdlg:bg-transparent mdlg:w-3/5">
+          <div className="mdlg:h-full mt-4 mdlg:mt-0 flex flex-col pt-4 mdlg:pt-0 rounded-lg bg-neutral-200 mdlg:bg-transparent mdlg:w-3/5 ">
             <div className="h-1/2 mdlg:bg-neutral-200 mdlg:w-full rounded-lg flex flex-col pb-4 justify-between">
               <p
                 className={`${props.font[1].className} text-2xl mdlg:w-[20rem] mdlg:mt-[1rem] ml-4 text-neutral-500`}
